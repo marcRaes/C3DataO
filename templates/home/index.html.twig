@@ -1,0 +1,12 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Le côté obscur de la Force{% endblock %}
+
+{% block body %}
+    <a href="{{ path('app_films') }}" role="button">Films</a>
+    <a href="{{ path('app_people') }}" role="button">Personnages</a>
+    <a href="{{ path('app_planets') }}" role="button">Planètes</a>
+    <a href="{{ path('app_species') }}" role="button">Espèces</a>
+    <a href="{{ path('app_starships') }}" role="button">Vaisseaux spatiaux</a>
+    <a href="{{ path('app_vehicles') }}" role="button">Véhicules</a>
+{% endblock %}

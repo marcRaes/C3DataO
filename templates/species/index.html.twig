@@ -1,0 +1,55 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste des espèces{% endblock %}
+
+{% block body %}
+    {% for species in listOfSpecies %}
+        <details>
+            <summary role="button">{{ species.name }}</summary>
+            <table>
+                <thead data-theme="light">
+                <tr>
+                    <th scope="col">Classification</th>
+                    <th scope="col">Désignation</th>
+                    <th scope="col">Taille moyenne</th>
+                    <th scope="col">Couleurs de peau</th>
+                    <th scope="col">Couleurs de cheveux</th>
+                    <th scope="col">Couleurs des yeux</th>
+                    <th scope="col">Durée de vie moyenne</th>
+                    <th scope="col">Langue</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">{{ species.classification }}</th>
+                    <td>{{ species.designation }}</td>
+                    <td>{{ species.average_height }}</td>
+                    <td>{{ species.skin_colors }}</td>
+                    <td>{{ species.hair_colors }}</td>
+                    <td>{{ species.eye_colors }}</td>
+                    <td>{{ species.average_lifespan }}</td>
+                    <td>{{ species.language }}</td>
+                </tr>
+                </tbody>
+            </table>
+        </details>
+    {% endfor %}
+
+    <nav>
+        {% if page > 1 %}
+            <a href="{{ path('app_species', {'page': page - 1}) }}">Précédent</a>
+        {% endif %}
+
+        {% for i in 1..nbPages %}
+            {% if i == page %}
+                <span>{{ i }}</span>
+            {% else %}
+                <a href="{{ path('app_species', {'page': i}) }}">{{ i }}</a>
+            {% endif %}
+        {% endfor %}
+
+        {% if page < nbPages %}
+            <a href="{{ path('app_species', {'page': page + 1}) }}">Suivant</a>
+        {% endif %}
+    </nav>
+{% endblock %}
