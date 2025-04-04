@@ -7,6 +7,11 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
+use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\DecodingExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 
 final class PeopleController extends AbstractController
 {
@@ -14,6 +19,13 @@ final class PeopleController extends AbstractController
         private readonly StarWarsApiService $starWarsApiService
     ) {}
 
+    /**
+     * @throws TransportExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws RedirectionExceptionInterface
+     * @throws DecodingExceptionInterface
+     * @throws ClientExceptionInterface
+     */
     #[Route('/people', name: 'app_people')]
     public function index(Request $request): Response
     {
@@ -21,7 +33,7 @@ final class PeopleController extends AbstractController
         $listOfCharacters = $this->starWarsApiService->getCharacters($page);
 
         return $this->render('people/index.html.twig', [
-            'characters' => $listOfCharacters['results'],
+            'listOfCharacters' => $listOfCharacters['results'],
             'page' => $page,
             'nbPages' => ceil($listOfCharacters['count'] / 10),
         ]);

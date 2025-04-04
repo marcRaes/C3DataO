@@ -3,49 +3,9 @@
 {% block title %}Liste des personnages{% endblock %}
 
 {% block body %}
-    {% for character in characters %}
-        <details>
-            <summary role="button">{{ character.name }}</summary>
-            <table>
-                <thead data-theme="light">
-                <tr>
-                    <th scope="col">Année de naissance</th>
-                    <th scope="col">Taille</th>
-                    <th scope="col">Poids</th>
-                    <th scope="col">Couleur des cheveux</th>
-                    <th scope="col">Couleur des yeux</th>
-                    <th scope="col">Couleur de peau</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">{{ character.birth_year }}</th>
-                    <td>{{ character.height }}</td>
-                    <td>{{ character.mass }}</td>
-                    <td>{{ character.hair_color }}</td>
-                    <td>{{ character.eye_color }}</td>
-                    <td>{{ character.skin_color }}</td>
-                </tr>
-                </tbody>
-            </table>
-        </details>
-    {% endfor %}
+    {% import '_category.html.twig' as categoryMacros %}
+    {% set keysToLabel = ['height', 'mass', 'birth_year'] %}
+    {% set unitKeys = {'height': 'cm', 'mass': 'kg'} %}
 
-    <nav>
-        {% if page > 1 %}
-            <a href="{{ path('app_people', {'page': page - 1}) }}">Précédent</a>
-        {% endif %}
-
-        {% for i in 1..nbPages %}
-            {% if i == page %}
-                <span>{{ i }}</span>
-            {% else %}
-                <a href="{{ path('app_people', {'page': i}) }}">{{ i }}</a>
-            {% endif %}
-        {% endfor %}
-
-        {% if page < nbPages %}
-            <a href="{{ path('app_people', {'page': page + 1}) }}">Suivant</a>
-        {% endif %}
-    </nav>
+    {{ categoryMacros.renderCategory(listOfCharacters, keysToLabel, 'people', 'app_people', page, nbPages, unitKeys=unitKeys) }}
 {% endblock %}

@@ -4,6 +4,11 @@ declare(strict_types=1);
 
 namespace App\Service;
 
+use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\DecodingExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface;
+use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class StarWarsApiService
@@ -20,45 +25,80 @@ class StarWarsApiService
         private readonly HttpClientInterface $httpClient
     ) {}
 
+    /**
+     * @throws TransportExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws RedirectionExceptionInterface
+     * @throws DecodingExceptionInterface
+     * @throws ClientExceptionInterface
+     */
     public function getCharacters(int $page = 1): array
     {
         $response = $this->httpClient->request('GET', self::BASE_URL_PEOPLE . '?page=' . $page);
 
-        return $response->toArray();
+        return $this->removeUnnecessaryFields($response->toArray());
     }
 
+    /**
+     * @throws TransportExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws RedirectionExceptionInterface
+     * @throws DecodingExceptionInterface
+     * @throws ClientExceptionInterface
+     */
     public function getFilms(): array
     {
         $response = $this->httpClient->request('GET', self::BASE_URL_FILMS);
 
-        return $response->toArray();
+        return $this->removeUnnecessaryFields($response->toArray());
     }
 
     public function getPlanets(int $page = 1): array
     {
         $response = $this->httpClient->request('GET', self::BASE_URL_PLANETS . '?page=' . $page);
 
-        return $response->toArray();
+        return $this->removeUnnecessaryFields($response->toArray());
     }
 
     public function getSpecies(int $page = 1): array
     {
         $response = $this->httpClient->request('GET', self::BASE_URL_SPECIES . '?page=' . $page);
 
-        return $response->toArray();
+        return $this->removeUnnecessaryFields($response->toArray());
     }
 
     public function getStarships(int $page = 1): array
     {
         $response = $this->httpClient->request('GET', self::BASE_URL_STARSHIPS . '?page=' . $page);
 
-        return $response->toArray();
+        return $this->removeUnnecessaryFields($response->toArray());
     }
 
     public function getVehicles(int $page = 1): array
     {
         $response = $this->httpClient->request('GET', self::BASE_URL_VEHICLES . '?page=' . $page);
 
-        return $response->toArray();
+        return $this->removeUnnecessaryFields($response->toArray());
+    }
+
+    private function removeUnnecessaryFields(array $entities): array
+    {
+        foreach($entities['results'] as $key => $character) {
+            unset($entities['results'][$key]['homeworld']);
+            unset($entities['results'][$key]['films']);
+            unset($entities['results'][$key]['characters']);
+            unset($entities['results'][$key]['residents']);
+            unset($entities['results'][$key]['people']);
+            unset($entities['results'][$key]['pilots']);
+            unset($entities['results'][$key]['planets']);
+            unset($entities['results'][$key]['species']);
+            unset($entities['results'][$key]['vehicles']);
+            unset($entities['results'][$key]['starships']);
+            unset($entities['results'][$key]['created']);
+            unset($entities['results'][$key]['edited']);
+            unset($entities['results'][$key]['url']);
+        }
+
+        return $entities;
     }
 }

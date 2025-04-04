@@ -3,51 +3,8 @@
 {% block title %}Liste des planètes{% endblock %}
 
 {% block body %}
-    {% for planet in listOfPlanets %}
-        <details>
-            <summary role="button">{{ planet.name }}</summary>
-            <table>
-                <thead data-theme="light">
-                <tr>
-                    <th scope="col">Période de rotation</th>
-                    <th scope="col">Période orbitale</th>
-                    <th scope="col">Diamètre</th>
-                    <th scope="col">Climat</th>
-                    <th scope="col">Gravité</th>
-                    <th scope="col">Terrain</th>
-                    <th scope="col">Population</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">{{ planet.rotation_period }}</th>
-                    <td>{{ planet.orbital_period }}</td>
-                    <td>{{ planet.diameter }}</td>
-                    <td>{{ planet.climate }}</td>
-                    <td>{{ planet.gravity }}</td>
-                    <td>{{ planet.terrain }}</td>
-                    <td>{{ planet.population }}</td>
-                </tr>
-                </tbody>
-            </table>
-        </details>
-    {% endfor %}
+    {% import '_category.html.twig' as categoryMacros %}
+    {% set keysToLabel = ['rotation_period', 'orbital_period', 'diameter', 'surface_water', 'population'] %}
 
-    <nav>
-        {% if page > 1 %}
-            <a href="{{ path('app_planets', {'page': page - 1}) }}">Précédent</a>
-        {% endif %}
-
-        {% for i in 1..nbPages %}
-            {% if i == page %}
-                <span>{{ i }}</span>
-            {% else %}
-                <a href="{{ path('app_planets', {'page': i}) }}">{{ i }}</a>
-            {% endif %}
-        {% endfor %}
-
-        {% if page < nbPages %}
-            <a href="{{ path('app_planets', {'page': page + 1}) }}">Suivant</a>
-        {% endif %}
-    </nav>
+    {{ categoryMacros.renderCategory(listOfPlanets, keysToLabel, 'planets', 'app_planets', page, nbPages) }}
 {% endblock %}

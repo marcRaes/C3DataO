@@ -3,29 +3,10 @@
 {% block title %}Liste des films{% endblock %}
 
 {% block body %}
-    {% for film in films %}
-        <details>
-            <summary role="button">{{ film.title }}</summary>
-            <table>
-                <thead data-theme="light">
-                <tr>
-                    <th scope="col">Episode N°</th>
-                    <th scope="col">Texte début</th>
-                    <th scope="col">Réalisateur</th>
-                    <th scope="col">Producteur</th>
-                    <th scope="col">Date de sortie</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <th scope="row">{{ film.episode_id }}</th>
-                    <td>{{ film.opening_crawl }}</td>
-                    <td>{{ film.director }}</td>
-                    <td>{{ film.producer }}</td>
-                    <td>{{ film.release_date }}</td>
-                </tr>
-                </tbody>
-            </table>
-        </details>
-    {% endfor %}
+    {% import '_category.html.twig' as categoryMacros %}
+    {% set keysToLabel = [] %}
+    {% set excludeKeys = ['episode_id'] %}
+    {% set specialKeys = {'opening_crawl': 'opening_crawl', 'release_date': 'release_date'} %}
+
+    {{ categoryMacros.renderCategory(listOfFilms, keysToLabel, 'films', 'app_films', page, nbPages, excludeKeys, specialKeys) }}
 {% endblock %}

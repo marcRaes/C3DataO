@@ -1,0 +1,9 @@
+.vertical-table th[scope="col"] {
+    background-color: lightgray;
+    color: rgb(19, 22.5, 30.5);
+    width: 30%;
+}
+
+.vertical-table tr:nth-child(even) td {
+    background-color: rgba(111, 120, 135, 0.0375);
+}
