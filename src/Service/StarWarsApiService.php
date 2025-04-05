@@ -14,12 +14,12 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 class StarWarsApiService
 {
     private const BASE_URL = 'https://swapi.dev/api/';
-    private const BASE_URL_PEOPLE = self::BASE_URL . 'people';
-    private const BASE_URL_FILMS = self::BASE_URL . 'films';
-    private const BASE_URL_PLANETS = self::BASE_URL . 'planets';
-    private const BASE_URL_SPECIES = self::BASE_URL . 'species';
-    private const BASE_URL_STARSHIPS = self::BASE_URL . 'starships';
-    private const BASE_URL_VEHICLES = self::BASE_URL . 'vehicles';
+    private const BASE_URL_PEOPLE = 'people';
+    private const BASE_URL_FILMS = 'films';
+    private const BASE_URL_PLANETS = 'planets';
+    private const BASE_URL_SPECIES = 'species';
+    private const BASE_URL_STARSHIPS = 'starships';
+    private const BASE_URL_VEHICLES = 'vehicles';
 
     public function __construct(
         private readonly HttpClientInterface $httpClient
@@ -32,9 +32,9 @@ class StarWarsApiService
      * @throws DecodingExceptionInterface
      * @throws ClientExceptionInterface
      */
-    public function getCharacters(int $page = 1): array
+    public function getEntities(string $endpoint, int $page = 1): array
     {
-        $response = $this->httpClient->request('GET', self::BASE_URL_PEOPLE . '?page=' . $page);
+        $response = $this->httpClient->request('GET', self::BASE_URL . $endpoint . '?page=' . $page);
 
         return $this->removeUnnecessaryFields($response->toArray());
     }
@@ -46,39 +46,75 @@ class StarWarsApiService
      * @throws DecodingExceptionInterface
      * @throws ClientExceptionInterface
      */
-    public function getFilms(): array
+    public function getPeople(int $page = 1): array
     {
-        $response = $this->httpClient->request('GET', self::BASE_URL_FILMS);
-
-        return $this->removeUnnecessaryFields($response->toArray());
+        return $this->getEntities(self::BASE_URL_PEOPLE, $page);
     }
 
+    /**
+     * @throws TransportExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws RedirectionExceptionInterface
+     * @throws DecodingExceptionInterface
+     * @throws ClientExceptionInterface
+     */
+    public function getFilms(int $page = 1): array
+    {
+        $films = $this->getEntities(self::BASE_URL_FILMS, $page);
+
+        usort($films['results'], function($a, $b) {
+            return $a['episode_id'] <=> $b['episode_id'];
+        });
+
+        return $films;
+    }
+
+    /**
+     * @throws TransportExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws RedirectionExceptionInterface
+     * @throws DecodingExceptionInterface
+     * @throws ClientExceptionInterface
+     */
     public function getPlanets(int $page = 1): array
     {
-        $response = $this->httpClient->request('GET', self::BASE_URL_PLANETS . '?page=' . $page);
-
-        return $this->removeUnnecessaryFields($response->toArray());
+        return $this->getEntities(self::BASE_URL_PLANETS, $page);
     }
 
+    /**
+     * @throws TransportExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws RedirectionExceptionInterface
+     * @throws DecodingExceptionInterface
+     * @throws ClientExceptionInterface
+     */
     public function getSpecies(int $page = 1): array
     {
-        $response = $this->httpClient->request('GET', self::BASE_URL_SPECIES . '?page=' . $page);
-
-        return $this->removeUnnecessaryFields($response->toArray());
+        return $this->getEntities(self::BASE_URL_SPECIES, $page);
     }
 
+    /**
+     * @throws TransportExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws RedirectionExceptionInterface
+     * @throws DecodingExceptionInterface
+     * @throws ClientExceptionInterface
+     */
     public function getStarships(int $page = 1): array
     {
-        $response = $this->httpClient->request('GET', self::BASE_URL_STARSHIPS . '?page=' . $page);
-
-        return $this->removeUnnecessaryFields($response->toArray());
+        return $this->getEntities(self::BASE_URL_STARSHIPS, $page);
     }
 
+    /**
+     * @throws TransportExceptionInterface
+     * @throws ServerExceptionInterface
+     * @throws RedirectionExceptionInterface
+     * @throws DecodingExceptionInterface
+     * @throws ClientExceptionInterface
+     */
     public function getVehicles(int $page = 1): array
     {
-        $response = $this->httpClient->request('GET', self::BASE_URL_VEHICLES . '?page=' . $page);
-
-        return $this->removeUnnecessaryFields($response->toArray());
+        return $this->getEntities(self::BASE_URL_VEHICLES, $page);
     }
 
     private function removeUnnecessaryFields(array $entities): array
