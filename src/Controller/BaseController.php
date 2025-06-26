@@ -20,9 +20,9 @@ abstract class BaseController extends AbstractController
         $listOfEntities = $this->starWarsApiService->$method($page);
 
         return $this->render($template, [
-            'listOf' . ucfirst($entityType) => $listOfEntities['results'],
+            'listOf' . ucfirst($entityType) => $listOfEntities,
             'page' => $page,
-            'nbPages' => ceil($listOfEntities['count'] / 10),
+            'nbPages' => count($listOfEntities) / 10,
         ]);
     }
 }

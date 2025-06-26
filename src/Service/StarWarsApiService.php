@@ -13,7 +13,7 @@ use Symfony\Contracts\HttpClient\HttpClientInterface;
 
 class StarWarsApiService
 {
-    private const BASE_URL = 'https://swapi.dev/api/';
+    private const BASE_URL = 'https://swapi.info/api/';
     private const BASE_URL_PEOPLE = 'people';
     private const BASE_URL_FILMS = 'films';
     private const BASE_URL_PLANETS = 'planets';
@@ -62,7 +62,7 @@ class StarWarsApiService
     {
         $films = $this->getEntities(self::BASE_URL_FILMS, $page);
 
-        usort($films['results'], function($a, $b) {
+        usort($films, function($a, $b) {
             return $a['episode_id'] <=> $b['episode_id'];
         });
 
@@ -119,20 +119,20 @@ class StarWarsApiService
 
     private function removeUnnecessaryFields(array $entities): array
     {
-        foreach($entities['results'] as $key => $character) {
-            unset($entities['results'][$key]['homeworld']);
-            unset($entities['results'][$key]['films']);
-            unset($entities['results'][$key]['characters']);
-            unset($entities['results'][$key]['residents']);
-            unset($entities['results'][$key]['people']);
-            unset($entities['results'][$key]['pilots']);
-            unset($entities['results'][$key]['planets']);
-            unset($entities['results'][$key]['species']);
-            unset($entities['results'][$key]['vehicles']);
-            unset($entities['results'][$key]['starships']);
-            unset($entities['results'][$key]['created']);
-            unset($entities['results'][$key]['edited']);
-            unset($entities['results'][$key]['url']);
+        foreach($entities as $key => $character) {
+            unset($entities[$key]['homeworld']);
+            unset($entities[$key]['films']);
+            unset($entities[$key]['characters']);
+            unset($entities[$key]['residents']);
+            unset($entities[$key]['people']);
+            unset($entities[$key]['pilots']);
+            unset($entities[$key]['planets']);
+            unset($entities[$key]['species']);
+            unset($entities[$key]['vehicles']);
+            unset($entities[$key]['starships']);
+            unset($entities[$key]['created']);
+            unset($entities[$key]['edited']);
+            unset($entities[$key]['url']);
         }
 
         return $entities;
