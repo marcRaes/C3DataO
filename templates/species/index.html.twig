@@ -1,10 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Liste des espèces{% endblock %}
+{% block title %}C3DataO - Espèces{% endblock %}
 
 {% block body %}
-    {% import '_category.html.twig' as categoryMacros %}
-    {% set keysToLabel = ['average_height', 'average_lifespan'] %}
-
-    {{ categoryMacros.renderCategory(listOfSpecies, keysToLabel, 'species', 'app_species', page, nbPages) }}
+    {% include 'partials/_category.html.twig' with {
+        'items': listOfSpecies,
+        'routeName': 'app_species',
+        'currentPage': currentPage,
+        'totalPages': totalPages,
+    } %}
 {% endblock %}

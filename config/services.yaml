@@ -20,5 +20,42 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
 
+    # Présenter factory
+    App\Presenter\Factory\PresenterFactoryInterface: '@App\Presenter\Factory\PresenterFactory'
+
+    App\Presenter\Factory\PresenterFactory:
+        arguments:
+            $presenters: !tagged_iterator presenter.tag
+
+    Symfony\Contracts\Translation\TranslatorInterface: '@translator.default'
+    Symfony\Component\Translation\TranslatorBagInterface: '@translator.default'
+
+    # Auto-registre tous les endpoints et les tag avec app.api.endpoint
+    App\Api\:
+        resource: '../src/Api/'
+        tags: [ 'app.api.endpoint' ]
+
+    # Injecte tous les endpoints taggés dans EndpointRegistry
+    App\Api\EndpointRegistry:
+        arguments:
+            $endpoints: !tagged_iterator app.api.endpoint
+
+    # Auto-registre tous les presenters sauf la factory
+    App\Presenter\:
+        resource: '../src/Presenter/'
+        exclude:
+            - '../src/Presenter/Factory/'
+        tags: [ 'presenter.tag' ]
+
+    App\Presenter\Factory\FormatterFactory:
+        arguments:
+            $formatters: !tagged_iterator app.formatter
+
+    App\Presenter\Factory\FormatterFactoryInterface: '@App\Presenter\Factory\FormatterFactory'
+
+    App\Presenter\Formatter\:
+        resource: '../src/Presenter/Formatter/'
+        tags: [ 'app.formatter' ]
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

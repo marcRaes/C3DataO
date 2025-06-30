@@ -1,0 +1,28 @@
+<div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 my-2">
+    {% for name, characteristics in items %}
+        <div class="bg-gray-800 rounded-2xl shadow-lg p-6">
+            <div class="flex flex-col items-center mb-4">
+                {% if routeName == 'app_people' %}
+                    {% set initials = name|initials %}
+                    <div class="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center text-2xl font-bold text-white shadow-inner">
+                        {{ initials }}
+                    </div>
+                {% endif %}
+                <h2 class="mt-3 text-xl font-semibold text-blue-300 text-center">
+                    {{ name }}
+                </h2>
+            </div>
+            <ul class="text-sm text-gray-300 space-y-1">
+                {% for key, value in characteristics %}
+                    <li><strong>{{ key }}: </strong>{{ value }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    {% endfor %}
+</div>
+
+{% include 'partials/_pagination.html.twig' with {
+    'currentPage': currentPage,
+    'totalPages': totalPages,
+    'routeName': routeName
+} %}

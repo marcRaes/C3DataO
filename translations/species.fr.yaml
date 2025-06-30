@@ -1,0 +1,133 @@
+name: Genre
+classification: Classification
+designation: Désignation
+average_height: Taille moyenne
+skin_colors: Couleurs de peau
+hair_colors: Couleurs de cheveux
+eye_colors: Couleurs des yeux
+average_lifespan: Durée de vie moyenne
+language: Langue
+Human: Humain
+Droid: Droïde
+Wookie: Wookie
+Rodian: Rodien
+Hutt: Hutt
+"Yoda's species": Espèce de Yoda
+Trandoshan: Trandoshan
+'Mon Calamari': Mon Calamari
+Ewok: Ewok
+Sullustan: Sullustéen
+Neimodian: Neimoidien
+Gungan: Gungan
+Toydarian: Toydarian
+Dug: Dug
+Twi'lek: Twi'lek
+Aleena: Aléena
+Vulptereen: Vulpterrien
+Xexto: Xexto
+Toong: Toong
+Cerean: Céréen
+Nautolan: Nautolan
+Zabrak: Zabrak
+Tholothian: Tholothien
+Iktotchi: Iktotchi
+Quermian: Quermien
+'Kel Dor': Kel Dor
+Chagrian: Chagrien
+Geonosian: Géonosien
+Mirialan: Mirialan
+Clawdite: Clawdite
+Besalisk: Besalisk
+Kaminoan: Kaminoan
+Skakoan: Skakoan
+Muun: Muun
+Togruta: Togruta
+Kaleesh: Kaleesh
+Pau'an: Pau'an
+mammal: Mammifère
+mammals: Mammifères
+artificial: Artificiel
+gastropod: Gastéropode
+reptile: Reptile
+amphibian: Amphibie
+insectoid: Insectoïde
+reptilian: Reptilien
+sentient: Sensible
+gray: Gris
+grey: Gris
+brown: Marron
+pale: Pâle
+black: Noir
+yellow: Jaune
+orange: Orange
+hazel: Noisette
+dark: Noir
+pink: Rose
+white: Blanc
+blue: Bleue
+'caucasian, black, asian, hispanic': Caucasien, Noir, Asiatique, Hispanique
+'green, blue': Vert, Bleu
+'green, brown, tan': Vert, Marron, Beige
+'green, yellow': Vert, Jaune
+'brown, green': Marron, Vert
+'red, blue, brown, magenta': Rouge, Bleu, Marron, Magenta
+'blonde, brown, black, red': Blond, Brun, Noir, Roux
+'black, brown': Noir, Marron
+'brown, white': Marron, Blanc
+'white, brown, black': Blanc, Marron, Noir
+'brown, blue, green, hazel, grey, amber': Marron, Bleu, Vert, Noisette, Gris, Ambre
+'blue, green, yellow, brown, golden, red': Bleu, Vert, Jaune, Marron, Doré, Rouge
+'yellow, red': Jaune, Rouge
+'brown, green, yellow': Marron, Vert, Jaune
+'yellow, orange': Jaune, Orange
+'orange, brown': Orange, Marron
+'grey, green': Gris, Vert
+'red, pink': Rouge, Rose
+'blue, green, grey': Bleu, Vert, Gris
+'brown, purple, grey, red': Marron, Violet, Gris, Rouge
+'yellow, blue': Jaune, Bleu
+'orange, yellow, blue, green, pink, purple, tan': Orange, Jaune, Bleu, Vert, Rose, Violet, Beige
+'blue, brown, orange, pink': Bleu, Marron, Orange, Rose
+'blue, gray': Bleu, Gris
+'grey, yellow, purple': Gris, Jaune, Violet
+'grey, green, yellow': Gris, Vert, Jaune
+'pale pink': Rose pâle
+'red, blond, black, white': Rouge, Blond, Noir, Blanc
+'green, blue, brown, red': Vert, Bleu, Marron, Rouge
+'pale, brown, red, orange, yellow': Pâle, Marron, Rouge, Orange, Jaune
+'brown, orange': Marron, Orange
+'blue, indigo': Bleu, Indigo
+'peach, orange, red': Pêche, Orange, Rouge
+'black, silver': Noir, Argent
+'green, brown': Vert, Marron
+'green, hazel': Vert, Noisette
+'yellow, green': Jaune, Vert
+'blue, green, red, yellow, brown, orange': Bleu, Vert, Rouge, Jaune, Marron, Orange
+'red, white, orange, yellow, green, blue': Rouge, Blanc, Orange, Jaune, Vert, Bleu
+'red, orange, yellow, green, blue, black': Rouge, Orange, Jaune, Vert, Bleu, Noir
+'grey, blue': Gris, Bleue
+'grey, white': Gris, Blanc
+'brown, orange, tan': Marron, Orange, Beige
+'Galactic Basic': Basique Galactique
+'Galatic Basic': Basique Galactique
+'Galactic basic': Basique Galactique
+Shyriiwook: Shyriiwook
+Huttese: Huttese
+Dosh: Dosh
+'Mon Calamarian': Mon Calamarien
+Ewokese: Ewokais
+Sullutese: Sullustéen
+Neimoidia: Neimoidien
+'Gungan basic': Basique Gungan
+Dugese: Dugèse
+Twi'leki: Twi'leki
+vulpterish: Vulpterien
+Xextese: Xextois
+Tundan: Tundan
+Nautila: Nautila
+Zabraki: Zabraki
+Iktotchese: Iktotchais
+Chagria: Chagrien
+Togruti: Togruta
+Utapese: Utapéen
+besalisk: Besalisk

@@ -1,0 +1,22 @@
+{% if currentRoute != 'app_home' %}
+    <div class="flex flex-wrap justify-center gap-2 sm:gap-4 text-sm sm:text-base mt-2">
+        <a href="{{ path('app_films') }}" class="px-4 py-2 rounded font-semibold transition {{ currentRoute == 'app_films' ? 'bg-yellow-500 text-black' : 'text-yellow-400 hover:bg-yellow-700 hover:text-white' }}">
+            🎬 Films
+        </a>
+        <a href="{{ path('app_people') }}" class="px-4 py-2 rounded font-semibold transition {{ currentRoute == 'app_people' ? 'bg-yellow-500 text-black' : 'text-yellow-400 hover:bg-yellow-700 hover:text-white' }}">
+            🧑 Personnages
+        </a>
+        <a href="{{ path('app_planets') }}" class="px-4 py-2 rounded font-semibold transition {{ currentRoute == 'app_planets' ? 'bg-yellow-500 text-black' : 'text-yellow-400 hover:bg-yellow-700 hover:text-white' }}">
+            🪐 Planètes
+        </a>
+        <a href="{{ path('app_species') }}" class="px-4 py-2 rounded font-semibold transition {{ currentRoute == 'app_species' ? 'bg-yellow-500 text-black' : 'text-yellow-400 hover:bg-yellow-700 hover:text-white' }}">
+            👽 Espèces
+        </a>
+        <a href="{{ path('app_starships') }}" class="px-4 py-2 rounded font-semibold transition {{ currentRoute == 'app_starships' ? 'bg-yellow-500 text-black' : 'text-yellow-400 hover:bg-yellow-700 hover:text-white' }}">
+            🛸 Vaisseaux
+        </a>
+        <a href="{{ path('app_vehicles') }}" class="px-4 py-2 rounded font-semibold transition {{ currentRoute == 'app_vehicles' ? 'bg-yellow-500 text-black' : 'text-yellow-400 hover:bg-yellow-700 hover:text-white' }}">
+            🚗 Véhicules
+        </a>
+    </div>
+{% endif %}

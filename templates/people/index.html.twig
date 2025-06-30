@@ -1,11 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Liste des personnages{% endblock %}
+{% block title %}C3DataO - Personnages{% endblock %}
 
 {% block body %}
-    {% import '_category.html.twig' as categoryMacros %}
-    {% set keysToLabel = ['height', 'mass', 'birth_year'] %}
-    {% set unitKeys = {'height': 'cm', 'mass': 'kg'} %}
-
-    {{ categoryMacros.renderCategory(listOfPeople, keysToLabel, 'people', 'app_people', page, nbPages, unitKeys=unitKeys) }}
+    {% include 'partials/_category.html.twig' with {
+        'items': listOfPeople,
+        'routeName': 'app_people',
+        'currentPage': currentPage,
+        'totalPages': totalPages,
+    } %}
 {% endblock %}

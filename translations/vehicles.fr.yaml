@@ -1,0 +1,125 @@
+name: Nom
+model: Modèle
+manufacturer: Fabricant
+cost_in_credits: Coût
+length: Longueur
+max_atmosphering_speed: Vitesse max
+crew: Equipage
+passengers: Passagers
+cargo_capacity: Capacité
+consumables: consommables
+vehicle_class: Classe
+'Sand Crawler': Chenille des Sables
+'T-16 skyhopper': T-16 Skyhopper
+'X-34 landspeeder': X-34 Landspeeder
+'TIE/LN starfighter': Chasseur Stellaire TIE/LN
+Snowspeeder: Snowspeeder
+'TIE bomber': Bombardier TIE
+AT-AT: AT-AT
+AT-ST: AT-ST
+'Storm IV Twin-Pod cloud car': Voiture Nuageuse Storm IV à Double Nacelle
+'Sail barge': Barge à Voile
+'Bantha-II cargo skiff': Skiff de Cargo Bantha-II
+'TIE/IN interceptor': Intercepteur TIE/IN
+'Imperial Speeder Bike': Moto Speeder Impériale
+'Vulture Droid': Droïde Vautour
+'Multi-Troop Transport': Transport Multi-Troupes
+'Armored Assault Tank': Tank d'Assaut Blindé
+'Single Trooper Aerial Platform': Plateforme Aérienne pour Un Seul Soldat
+'C-9979 landing craft': Vaisseau de Débarquement C-9979
+'Tribubble bongo': Tribulle Bongo
+'Sith speeder': Speeder Sith
+'Zephyr-G swoop bike': Moto Swoop Zephyr-G
+'Koro-2 Exodrive airspeeder': Aéroglisseur Koro-2 Exodrive
+'XJ-6 airspeeder': Aéroglisseur XJ-6
+LAAT/i: LAAT/i
+LAAT/c: LAAT/c
+AT-TE: AT-TE
+SPHA: SPHA
+'Flitknot speeder': Speeder Flitknot
+'Neimoidian shuttle': Navette Neimoidienne
+'Geonosian starfighter': Chasseur Stellaire Géonosien
+'Tsmeu-6 personal wheel bike': Vélo à Roue Personnel Tsmeu-6
+'Emergency Firespeeder': Firespeeder d'Urgence
+'Droid tri-fighter': Chasseur Tri-Droïde
+'Oevvaor jet catamaran': Catamaran à Réaction Oevvaor
+'Raddaugh Gnasp fluttercraft': Aéronef Raddaugh Gnasp
+'Clone turbo tank': Tank Turbo Clone
+'Corporate Alliance tank droid': Droïde Tank de l'Alliance Corporative
+'Droid gunship': Canonnière Droïde
+AT-RT: AT-RT
+'Digger Crawler': Chenille de Forage
+'Twin Ion Engine/Ln Starfighter': Chasseur Stellaire à Moteur Ionique Double TIE/LN
+'t-47 airspeeder': T-47 Aéroglisseur
+'TIE/sa bomber': Bombardier TIE/SA
+'All Terrain Armored Transport': Transport Blindé Tout Terrain
+'All Terrain Scout Transport': Transport de Reconnaissance Tout Terrain
+'Storm IV Twin-Pod': Storm IV à Double Nacelle
+'Modified Luxury Sail Barge': Barge à Voile de Luxe Modifiée
+'Bantha-II': Bantha-II
+'Twin Ion Engine Interceptor': Intercepteur à Moteur Ionique Double
+'74-Z speeder bike': Moto Speeder 74-Z
+'Vulture-class droid starfighter': Chasseur Stellaire Droïde de Classe Vautour
+'Armoured Assault Tank': Tank d'Assaut Blindé
+'FC-20 speeder bike': Moto Speeder FC-20
+'Low Altitude Assault Transport/infantry': Transport d'Assaut à Basse Altitude/Infanterie
+'Low Altitude Assault Transport/carrier': Transport d'Assaut à Basse Altitude/Transporteur
+'All Terrain Tactical Enforcer': Enforcer Tactique Tout Terrain
+'Self-Propelled Heavy Artillery': Artillerie Lourde Autopropulsée
+'Sheathipede-class transport shuttle': Navette de Transport de Classe Sheathipede
+'Nantex-class territorial defense': Défense Territoriale de Classe Nantex
+'Fire suppression speeder': Speeder de Lutte contre les Incendies
+'tri-fighter': Chasseur Tri-Droïde
+'HAVw A6 Juggernaut': Juggernaut HAVw A6
+'NR-N99 Persuader-class droid enforcer': Enforcer Droïde de Classe Persuader NR-N99
+'HMP droid gunship': Canonnière Droïde HMP
+'All Terrain Recon Transport': Transport de Reconnaissance Tout Terrain
+'Corellia Mining Corporation': Corporation Minière de Corellia
+'Incom Corporation': Corporation Incom
+'Incom corporation': Corporation Incom
+'SoroSuub Corporation': Corporation SoroSuub
+'Sienar Fleet Systems': Systèmes de Flotte Sienar
+'Kuat Drive Yards, Imperial Department of Military Research': Chantiers Navals de Kuat, Département Impérial de Recherche Militaire
+'Ubrikkian Industries Custom Vehicle Division': Division Véhicules Personnalisés d'Ubrikkian Industries
+'Aratech Repulsor Company': Compagnie de Répluseurs Aratech
+'Haor Chall Engineering, Baktoid Armor Workshop': Ingénierie Haor Chall, Atelier de Blindage Baktoid
+'Baktoid Armor Workshop': Atelier de Blindage Baktoid
+'Bespin Motors': Moteurs de Bespin
+'Otoh Gunga Bongameken Cooperative': Coopérative Bongameken d'Otoh Gunga
+'Razalon': Razalon
+'Mobquet Swoops and Speeders': Mobquet Swoops et Speeders
+'Desler Gizh Outworld Mobility Corporation': Corporation de Mobilité Externe Desler Gizh
+'Narglatch AirTech prefabricated kit': Kit Préfabriqué Narglatch AirTech
+'Rothana Heavy Engineering': Ingénierie Lourde Rothana
+'Huppla Pasa Tisc Shipwrights Collective': Collectif des Constructeurs de Vaisseaux Huppla Pasa Tisc
+'Z-Gomot Ternbuell Guppat Corporation': Corporation Z-Gomot Ternbuell Guppat
+'unknown': inconnu
+'Colla Designs, Phlac-Arphocc Automata Industries': Designs Colla, Industries Automates Phlac-Arphocc
+'Appazanna Engineering Works': Travaux d'Ingénierie Appazanna
+'Kuat Drive Yards': Chantiers Navals de Kuat
+'Techno Union': Union Techno
+'Baktoid Fleet Ordnance, Haor Chall Engineering': Ordonnance de Flotte Baktoid, Ingénierie Haor Chall
+wheeled: Véhicule à Roues
+repulsorcraft: Véhicule à répulseur
+starfighter: Chasseur Stellaire
+airspeeder: Aéroglisseur
+'space/planetary bomber': Bombardier Spatial/Planétaire
+'assault walker': Marcheur d'Assaut
+walker: Marcheur
+'sail barge': Barge à Voile
+'repulsorcraft cargo skiff': Skiff de Cargo à Répluseur
+speeder: Speeder
+'landing craft': Vaisseau de Débarquement
+submarine: Sous-Marin
+gunship: Canonnière
+transport: Transport
+'wheeled walker': Marcheur à Roues
+'fire suppression ship': Vaisseau de Lutte contre les Incendies
+'droid starfighter': Chasseur Stellaire Droïde
+'droid tank': Tank Droïde
+'air speeder': Aéroglisseur
+'Live food tanks': Réservoirs de nourriture vivante
+'Ubrikkian Industries': Ubrikkian Industries
+'Haor Chall Engineering': Ingénierie Haor Chall
+'Low Altitude Assault Transport/infrantry': Transport d'Assaut à Basse Altitude/Infanterie
+'Rothana Heavy Engineering, Kuat Drive Yards': Ingénierie Lourde Rothana, Chantiers Navals de Kuat

@@ -1,10 +1,12 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Liste des véhicules{% endblock %}
+{% block title %}C3DataO - Véhicules{% endblock %}
 
 {% block body %}
-    {% import '_category.html.twig' as categoryMacros %}
-    {% set keysToLabel = ['cost_in_credits', 'length', 'max_atmosphering_speed', 'crew', 'passengers', 'cargo_capacity'] %}
-
-    {{ categoryMacros.renderCategory(listOfVehicles, keysToLabel, 'vehicles', 'app_vehicles', page, nbPages) }}
+    {% include 'partials/_category.html.twig' with {
+        'items': listOfVehicles,
+        'routeName': 'app_vehicles',
+        'currentPage': currentPage,
+        'totalPages': totalPages,
+    } %}
 {% endblock %}

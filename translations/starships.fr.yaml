@@ -1,0 +1,131 @@
+name: Nom
+model: Modèle
+manufacturer: Fabricant
+cost_in_credits: Coût
+length: Longueur
+max_atmosphering_speed: Vitesse max
+crew: Equipage
+passengers: Passagers
+cargo_capacity: Capacité de chargement
+consumables: consommables
+hyperdrive_rating: Cote d'hyperpropulsion
+MGLT: MGLT
+starship_class: Classe
+'CR90 corvette': Corvette CR90
+'Star Destroyer': Destroyer Stellaire
+'Sentinel-class landing craft': Vaisseau de Débarquement de Classe Sentinelle
+'Death Star': Étoile de la Mort
+'Millennium Falcon': Faucon Millenium
+'Y-wing': Aile-Y
+'X-wing': Aile-X
+'TIE Advanced x1': TIE Avancé x1
+Executor: Exécuteur
+'Rebel transport': Transport Rebelle
+'Slave 1': Esclave I
+'Imperial shuttle': Navette Impériale
+'EF76 Nebulon-B escort frigate': Frégate d'Escorte Nebulon-B EF76
+'Calamari Cruiser': Croiseur Calamari
+'A-wing': Aile-A
+'B-wing': Aile-B
+'Republic Cruiser': Croiseur de la République
+'Droid control ship': Vaisseau de Contrôle de Droïdes
+'Naboo fighter': Chasseur Naboo
+'Naboo Royal Starship': Vaisseau Royal Naboo
+Scimitar: Scimitar
+'J-type diplomatic barge': Barge Diplomatique de Type J
+'AA-9 Coruscant freighter': Cargo AA-9 de Coruscant
+'Jedi starfighter': Chasseur Stellaire Jedi
+'H-type Nubian yacht': Yacht Nubian de Type H
+'Republic Assault ship': Vaisseau d'Assaut de la République
+'Solar Sailer': Voilier Solaire
+'Trade Federation cruiser': Croiseur de la Fédération du Commerce
+'Theta-class T-2c shuttle': Navette de Classe Theta T-2c
+'Republic attack cruiser': Croiseur d'Attaque de la République
+'Naboo star skiff': Skiff Stellaire Naboo
+'Jedi Interceptor': Intercepteur Jedi
+'arc-170': Arc-170
+'Banking clan frigte': Frégate du Clan Bancaire
+'Belbullab-22 starfighter': Chasseur Stellaire Belbullab-22
+'V-wing': Aile-V
+'Corellian Engineering Corporation': Corporation d'Ingénierie de Corellia
+'Kuat Drive Yards': Chantiers Navals de Kuat
+'Sienar Fleet Systems, Cyngus Spaceworks': Systèmes de Flotte Sienar, Cyngus Spaceworks
+'Imperial Department of Military Research, Sienar Fleet Systems': Département Impérial de Recherche Militaire, Systèmes de Flotte Sienar
+'Koensayr Manufacturing': Fabrication Koensayr
+'Incom Corporation': Corporation Incom
+'Kuat Drive Yards, Fondor Shipyards': Chantiers Navals de Kuat, Chantiers Navals de Fondor
+'Gallofree Yards, Inc.': Chantiers Gallofree, Inc.
+'Kuat Systems Engineering': Ingénierie des Systèmes Kuat
+'Mon Calamari shipyards': Chantiers Navals Mon Calamari
+'Alliance Underground Engineering, Incom Corporation': Ingénierie Souterraine de l'Alliance, Corporation Incom
+'Slayn & Korpil': Slayn & Korpil
+'Hoersch-Kessel Drive, Inc.': Hoersch-Kessel Drive, Inc.
+'Theed Palace Space Vessel Engineering Corps': Corps d'Ingénierie des Vaisseaux Spatiaux du Palais de Theed
+'Theed Palace Space Vessel Engineering Corps, Nubia Star Drives': Corps d'Ingénierie des Vaisseaux Spatiaux du Palais de Theed, Nubia Star Drives
+'Republic Sienar Systems': Systèmes Sienar de la République
+'Botajef Shipyards': Chantiers Navals Botajef
+'Rothana Heavy Engineering': Ingénierie Lourde Rothana
+'Huppla Pasa Tisc Shipwrights Collective': Collectif des Constructeurs de Vaisseaux Huppla Pasa Tisc
+'Rendili StarDrive, Free Dac Volunteers Engineering corps.': Rendili StarDrive, Corps d'Ingénierie des Volontaires de Free Dac
+'Cygnus Spaceworks': Cygnus Spaceworks
+'Kuat Drive Yards, Allanteen Six shipyards': Chantiers Navals de Kuat, Chantiers Navals d'Allanteen Six
+'Theed Palace Space Vessel Engineering Corps/Nubia Star Drives, Incorporated': Corps d'Ingénierie des Vaisseaux Spatiaux du Palais de Theed/Nubia Star Drives, Incorporated
+'Subpro Corporation': Corporation Subpro
+'Hoersch-Kessel Drive, Inc, Gwori Revolutionary Industries': Hoersch-Kessel Drive, Inc., Industries Révolutionnaires de Gwori
+'Feethan Ottraw Scalable Assemblies': Assemblages Évolutifs Feethan Ottraw
+'Imperial I-class Star Destroyer': Destroyer Stellaire de Classe I Impérial
+'DS-1 Orbital Battle Station': Station de Combat Orbitale DS-1
+'YT-1300 light freighter': Cargo Léger YT-1300
+'BTL Y-wing': Aile-Y BTL
+'T-65 X-wing': Aile-X T-65
+'Twin Ion Engine Advanced x1': TIE Avancé x1 à Moteur Ionique Double
+'Executor-class star dreadnought': Cuirassé Stellaire de Classe Executor
+'GR-75 medium transport': Transport Moyen GR-75
+'Firespray-31-class patrol and attack': Patrouilleur et Attaquant de Classe Firespray-31
+'Lambda-class T-4a shuttle': Navette de Classe Lambda T-4a
+'MC80 Liberty type Star Cruiser': Croiseur Stellaire de Type Liberté MC80
+'RZ-1 A-wing Interceptor': Intercepteur Aile-A RZ-1
+'A/SF-01 B-wing starfighter': Chasseur Stellaire Aile-B A/SF-01
+'Consular-class cruiser': Croiseur de Classe Consulaire
+'Lucrehulk-class Droid Control Ship': Vaisseau de Contrôle de Droïdes de Classe Lucrehulk
+'N-1 starfighter': Chasseur Stellaire N-1
+'J-type 327 Nubian royal starship': Vaisseau Royal Nubian de Type J-327
+'Star Courier': Courrier Stellaire
+'Botajef AA-9 Freighter-Liner': Cargo-Liner Botajef AA-9
+'Delta-7 Aethersprite-class interceptor': Intercepteur de Classe Aethersprite Delta-7
+'Acclamator I-class assault ship': Vaisseau d'Assaut de Classe Acclamator I
+'Punworcca 116-class interstellar sloop': Sloop Interstellaire de Classe Punworcca 116
+'Providence-class carrier/destroyer': Porte-vaisseau/Destroyer de Classe Providence
+'Senator-class Star Destroyer': Destroyer Stellaire de Classe Sénateur
+'J-type star skiff': Skiff Stellaire de Type J
+'Eta-2 Actis-class light interceptor': Intercepteur Léger de Classe Actis Eta-2
+'Aggressive Reconnaissance-170 starfighter': Chasseur Stellaire de Reconnaissance Agressive ARC-170
+'Munificent-class star frigate': Frégate Stellaire de Classe Munificent
+'Alpha-3 Nimbus-class V-wing starfighter': Chasseur Stellaire Aile-V de Classe Nimbus Alpha-3
+'Sienar Fleet Systems': Systèmes de Flotte Sienar
+'landing craft': Vaisseau de Débarquement
+'Deep Space Mobile Battlestation': Station de Combat Mobile de l'Espace Profond
+'Light freighter': Cargo Léger
+assault starfighter: Chasseur Stellaire d'Assaut
+Starfighter: Chasseur Stellaire
+'Star dreadnought': Cuirassé Stellaire
+'Medium transport': Transport Moyen
+corvette: Corvette
+'Patrol craft': Vaisseau de Patrouille
+'Armed government transport': Transport Gouvernemental Armé
+'Escort ship': Vaisseau d'Escorte
+'Star Cruiser': Croiseur Stellaire
+'Assault Starfighter': Chasseur Stellaire d'Assaut
+'Space cruiser': Croiseur Spatial
+yacht: Yacht
+'Space Transport': Transport Spatial
+'Diplomatic barge': Barge Diplomatique
+freighter: Cargo
+'assault ship': Vaisseau d'Assaut
+'capital ship': Vaisseau Capital
+transport: Transport
+'star destroyer': Destroyer Stellaire
+starfighter: Chasseur Stellaire
+'Aggressive Reconnaissance-170 starfighte': Chasseur Stellaire de Reconnaissance Agressive ARC-170
+'Incom Corporation, Subpro Corporation': Corporation Incom, Corporation Subpro
+cruiser: Croiseur

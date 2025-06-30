@@ -1,0 +1,134 @@
+name: Nom
+height: Taille
+mass: Poids
+hair_color: Couleur des cheveux
+skin_color: Couleur de peau
+eye_color: Couleur des yeux
+birth_year: Année de naissance
+gender: Genre
+blue: Bleue
+fair: Claire
+light: Claire
+male: Masculin
+female: Féminin
+hermaphrodite: Hermaphrodite
+gold: Or
+yellow: Jaune
+red: Rouge
+white: Blanc
+brown: Brun
+black: Noir
+green: Vert
+grey: Gris
+orange: Orange
+hazel: Noisette
+blond : Blond
+blonde: Blonde
+dark: Noir
+pink: Rose
+metal: Métal
+auburn: Auburn
+'white, blue': Blanc, Bleue
+'brown, grey': Marron, Gris
+'white, red': Blanc, Rouge
+'auburn, white': Auburn, Blanc
+'auburn, grey': Auburn, Gris
+'green-tan, brown': Vert-beige, Marron
+'blue-gray': Bleu-gris
+'mottled green': Vert tacheté
+'blue, grey': Bleue, Gris
+'grey, blue': Gris, Bleue
+'grey, green, yellow': Gris, Vert, Jaune
+'grey, red': Gris, Rouge
+'fair, green, yellow': Claire, Vert, Jaune
+'silver, red': Argent, Rouge
+'red, blue': Rouge, Bleue
+'green, grey': Vert, Gris
+'red, blue, white': Rouge, Bleue, Blanc
+'brown, white': Marron, Blanc
+'green, yellow': Vert Jaune
+'brown mottle': Marbrure brune
+pale: Pâle
+tan: Bronzer
+'Luke Skywalker': Luke Skywalker
+C-3PO: C-3PO
+R2-D2: R2-D2
+'Darth Vader': Dark Vador
+'Leia Organa': Leia Organa
+'Owen Lars': Owen Lars
+'Beru Whitesun lars': Beru Lars
+R5-D4: R5-D4
+'Biggs Darklighter': Biggs Darklighter
+'Obi-Wan Kenobi': Obi-Wan Kenobi
+'Anakin Skywalker': Anakin Skywalker
+'Wilhuff Tarkin': Grand Moff Tarkin
+Chewbacca: Chewbacca
+'Han Solo': Han Solo
+Greedo: Greedo
+'Jabba Desilijic Tiure': Jabba le Hutt
+'Wedge Antilles': Wedge Antilles
+'Jek Tono Porkins': Jek Porkins
+Yoda: Yoda
+Palpatine: Palpatine
+'Boba Fett': Boba Fett
+IG-88: IG-88
+Bossk: Bossk
+'Lando Calrissian': Lando Calrissian
+Lobot: Lobot
+Ackbar: Ackbar
+'Mon Mothma': Mon Mothma
+'Arvel Crynyd': Arvel Crynyd
+'Wicket Systri Warrick': Wicket W. Warrick
+'Nien Nunb': Nien Nunb
+'Qui-Gon Jinn': Qui-Gon Jinn
+'Nute Gunray': Nute Gunray
+'Finis Valorum': Finis Valorum
+'Padmé Amidala': Padmé Amidala
+'Jar Jar Binks': Jar Jar Binks
+'Roos Tarpals': Roos Tarpals
+'Rugor Nass': Rugor Nass
+'Ric Olié': Ric Olié
+Watto: Watto
+Sebulba: Sebulba
+'Quarsh Panaka': Quarsh Panaka
+'Shmi Skywalker': Shmi Skywalker
+'Darth Maul': Dark Maul
+'Bib Fortuna': Bib Fortuna
+'Ayla Secura': Aayla Secura
+'Ratts Tyerel': Ratts Tyerell
+'Dud Bolt': Dud Bolt
+Gasgano: Gasgano
+'Ben Quadinaros': Ben Quadinaros
+'Mace Windu': Mace Windu
+'Ki-Adi-Mundi': Ki-Adi-Mundi
+'Kit Fisto': Kit Fisto
+'Eeth Koth': Eeth Koth
+'Adi Gallia': Adi Gallia
+'Saesee Tiin': Saesee Tiin
+'Yarael Poof': Yarael Poof
+'Plo Koon': Plo Koon
+'Mas Amedda': Mas Amedda
+Cliegg Lars: Cliegg Lars
+Poggle the Lesser: Poggle le Bref
+Luminara Unduli: Luminara Unduli
+Barriss Offee: Barriss Offee
+Dormé: Dormé
+Dooku: Comte Dooku
+Bail Prestor Organa: Bail Organa
+Jango Fett: Jango Fett
+Zam Wesell: Zam Wesell
+Dexter Jettster: Dexter Jettster
+Lama Su: Lama Su
+Taun We: Taun We
+Jocasta Nu: Jocasta Nu
+R4-P17: R4-P17
+Wat Tambor: Wat Tambor
+San Hill: San Hill
+Shaak Ti: Shaak Ti
+Grievous: Grievous
+Tarfful: Tarfful
+Raymus Antilles: Raymus Antilles
+Sly Moore: Sly Moors
+Tion Medon: Tion Medon
+Gregar Typho: Gregar Typho
+Cordé: Cordé

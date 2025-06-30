@@ -1,12 +1,26 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Le côté obscur de la Force{% endblock %}
+{% block title %}C3DataO{% endblock %}
 
 {% block body %}
-    <a href="{{ path('app_films') }}" role="button">Films</a>
-    <a href="{{ path('app_people') }}" role="button">Personnages</a>
-    <a href="{{ path('app_planets') }}" role="button">Planètes</a>
-    <a href="{{ path('app_species') }}" role="button">Espèces</a>
-    <a href="{{ path('app_starships') }}" role="button">Vaisseaux spatiaux</a>
-    <a href="{{ path('app_vehicles') }}" role="button">Véhicules</a>
+    <div class="flex flex-wrap justify-center gap-4 mt-6">
+        <a href="{{ path('app_films') }}" class="flex items-center gap-2 bg-blue-600 hover:bg-yellow-400 text-white hover:text-black px-5 py-2 rounded-lg font-medium transition">
+            🎬 Films
+        </a>
+        <a href="{{ path('app_people') }}" class="flex items-center gap-2 bg-blue-600 hover:bg-yellow-400 text-white hover:text-black px-5 py-2 rounded-lg font-medium transition">
+            🧑 Personnages
+        </a>
+        <a href="{{ path('app_planets') }}" class="flex items-center gap-2 bg-blue-600 hover:bg-yellow-400 text-white hover:text-black px-5 py-2 rounded-lg font-medium transition">
+            🪐 Planètes
+        </a>
+        <a href="{{ path('app_species') }}" class="flex items-center gap-2 bg-blue-600 hover:bg-yellow-400 text-white hover:text-black px-5 py-2 rounded-lg font-medium transition">
+            👽 Espèces
+        </a>
+        <a href="{{ path('app_starships') }}" class="flex items-center gap-2 bg-blue-600 hover:bg-yellow-400 text-white hover:text-black px-5 py-2 rounded-lg font-medium transition">
+            🛸 Vaisseaux
+        </a>
+        <a href="{{ path('app_vehicles') }}" class="flex items-center gap-2 bg-blue-600 hover:bg-yellow-400 text-white hover:text-black px-5 py-2 rounded-lg font-medium transition">
+            🚗 Véhicules
+        </a>
+    </div>
 {% endblock %}

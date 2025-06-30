@@ -1,0 +1,30 @@
+{% if totalPages > 1 %}
+    <div class="flex justify-center mt-12 items-center space-x-2 flex-wrap">
+        {% if currentPage > 1 %}
+            <a href="{{ path(routeName, { page: currentPage - 1 }) }}"
+               class="bg-gray-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">
+                Précédent
+            </a>
+        {% endif %}
+
+        {% for page in 1..totalPages %}
+            {% if page == currentPage %}
+                <span class="bg-blue-600 text-white font-bold py-2 px-4 rounded-full">
+          {{ page }}
+        </span>
+            {% else %}
+                <a href="{{ path(routeName, { page: page }) }}"
+                   class="bg-gray-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">
+                    {{ page }}
+                </a>
+            {% endif %}
+        {% endfor %}
+
+        {% if currentPage < totalPages %}
+            <a href="{{ path(routeName, { page: currentPage + 1 }) }}"
+               class="bg-gray-700 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full">
+                Suivant
+            </a>
+        {% endif %}
+    </div>
+{% endif %}

@@ -1,9 +1,7 @@
-.vertical-table th[scope="col"] {
-    background-color: lightgray;
-    color: rgb(19, 22.5, 30.5);
-    width: 30%;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-.vertical-table tr:nth-child(even) td {
-    background-color: rgba(111, 120, 135, 0.0375);
+.btn-star {
+    @apply bg-blue-600 hover:bg-yellow-400 text-white hover:text-black px-6 py-3 rounded-xl font-bold transition duration-300 shadow-lg;
 }

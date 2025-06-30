@@ -1,0 +1,154 @@
+Tatooine: Tatooine
+Alderaan: Alderaan
+Yavin IV: Yavin IV
+Hoth: Hoth
+Dagobah: Dagobah
+Bespin: Bespin
+Endor: Endor
+Naboo: Naboo
+Coruscant: Coruscant
+Kamino: Kamino
+Geonosis: Géonosis
+Utapau: Utapau
+Mustafar: Mustafar
+Kashyyyk: Kashyyyk
+Polis Massa: Polis Massa
+Mygeeto: Mygeeto
+Felucia: Felucia
+Cato Neimoidia: Cato Neimoidia
+Saleucami: Saleucami
+Stewjon: Stewjon
+Eriadu: Eriadu
+Corellia: Corellia
+Rodia: Rodia
+Nal Hutta: Nal Hutta
+Dantooine: Dantooine
+Bestine IV: Bestine IV
+Ord Mantell: Ord Mantell
+unknown: Inconnu
+Trandosha: Trandosha
+Socorro: Socorro
+Mon Cala: Mon Cala
+Chandrila: Chandrila
+Sullust: Sullust
+Toydaria: Toydaria
+Malastare: Malastare
+Dathomir: Dathomir
+Ryloth: Ryloth
+Aleen Minor: Aleen Minor
+Vulpter: Vulpter
+Troiken: Troiken
+Tund: Tund
+Haruun Kal: Haruun Kal
+Cerea: Cerea
+Glee Anselm: Glee Anselm
+Iridonia: Iridonia
+Tholoth: Tholoth
+Iktotch: Iktotch
+Quermia: Quermia
+Dorin: Dorin
+Champala: Champala
+Mirial: Mirial
+Serenno: Serenno
+Concord Dawn: Concord Dawn
+Zolan: Zolan
+Ojom: Ojom
+Skako: Skako
+Muunilinst: Muunilinst
+Shili: Shili
+Kalee: Kalee
+Umbara: Umbara
+name: Nom
+rotation_period: Période de rotation
+orbital_period: Période orbitale
+diameter: Diamètre
+climate: Climat
+gravity: Gravité
+terrain: Terrain
+surface_water: Eau en surface
+population: Population
+arid: Aride
+desert: Désert
+temperate: Tempéré
+frozen: Congelé
+murky: Sombre
+ocean: Océan
+hot: Chaud
+frigid: Froid
+tropical: Tropical
+polluted: Pollué
+'temperate, arid': Tempéré, Aride
+'temperate, arid, windy': Tempéré, Aride, Venteux
+'artificial temperate ': Tempéré artificiel
+'temperate, moist': Tempéré, Humide
+'hot, humid': Chaud et humide
+'temperate, arid, subartic': Tempéré, Aride, Subarctique
+'temperate, artic': Tempéré, Arctique
+'urban, barren': Urbain, Stérile
+'barren, ash': Stérile, Cendres
+'tropical, temperate': Tropical, Tempéré
+'temperate, tropical': Tempéré, Tropical
+'arid, temperate, tropical': Aride, Tempéré, Tropical
+1: 1
+'1.56': 1,56
+'0.9': 0,9
+'0.98': 0,98
+'1 standard': 1 Standard
+'1.1 standard': 1,1 Standard
+'1.5 (surface), 1 standard (Cloud City)': 1,5 (Surface), 1 Standard (Cité des Nuages)
+'0.85 standard': 0,85 Standard
+'0.9 standard': 0,9 Standard
+'0.56 standard': 0,56 Standard
+'0.75 standard': 0,75 Standard
+'0.62 standard': 0,62 Standard
+grass: Herbe
+cityscape: Paysage urbain
+'grasslands, mountains': Prairies, Montagnes
+'jungle, rainforests': Jungle, Forêts tropicales
+'tundra, ice caves, mountain ranges': Toundra, Grottes de glace, Chaînes de montagnes
+'swamp, jungles': Marais, Jungles
+'gas giant': Géante gazeuse
+'forests, mountains, lakes': Forêts, Montagnes, Lacs
+'grassy hills, swamps, forests, mountains': Collines herbeuses, Marécages, Forêts, Montagnes
+'cityscape, mountains': Paysage urbain, Montagnes
+'rock, desert, mountain, barren': Rocher, Désert, Montagne, Aride
+'scrublands, savanna, canyons, sinkholes': Garrigues, Savane, Canyons, Dolines
+'volcanoes, lava rivers, mountains, caves': Volcans, Rivières de lave, Montagnes, Grottes
+'jungle, forests, lakes, rivers': Jungle, Forêts, Lacs, Rivières
+'airless asteroid': Astéroïde sans air
+'glaciers, mountains, ice canyons': Glaciers, Montagnes, Canyons de glace
+'fungus forests': Forêts de champignons
+'mountains, fields, forests, rock arches': Montagnes, Champs, Forêts, Arches rocheuses
+'caves, desert, mountains, volcanoes': Grottes, Désert, Montagnes, Volcans
+'plains, urban, hills, forests': Plaines, Urbaines, Collines, Forêts
+'jungles, oceans, urban, swamps': Jungles, Océans, Urbains, Marais
+'urban, oceans, swamps, bogs': Urbain, Océans, Marais, Tourbières
+'oceans, savannas, mountains, grasslands': Océans, Savanes, Montagnes, Prairies
+'rocky islands, oceans': Îles rocheuses, Océans
+'plains, seas, mesas': Plaines, Mers, Mesas
+'mountains, seas, grasslands, deserts': Montagnes, Mers, Prairies, Déserts
+'deserts, mountains': Déserts, Montagnes
+'oceans, reefs, islands': Océans, Récifs, Îles
+'plains, forests': Plaines, Forêts
+'superheated': Surchauffé
+'mountains, volcanoes, rocky deserts': Montagnes, Volcans, Déserts rocheux
+'swamps, lakes': Marécages, Lacs
+'swamps, deserts, jungles, mountains': Marécages, Déserts, Jungles, Montagnes
+'forests, deserts, savannas': Forêts, Déserts, Savanes
+'mountains, valleys, deserts, tundra': Montagnes, Vallées, Déserts, Toundra
+'desert, tundra, rainforests, mountains': Désert, Toundra, Forêts tropicales, Montagnes
+'toxic cloudsea, plateaus, volcanoes': Mer Toxique, Plateaux, Volcans
+'verdant': Verdoyant
+'lakes, islands, swamps, seas': Lacs, Îles, Marécages, Mers
+'rocky canyons, acid pools': Canyons Rocheux, Mares Acides
+'arid, rocky, windy': Aride, Rocheux, Venteux
+'rocky': Rocheux
+'oceans, rainforests, plateaus': Océans, Forêts Tropicales, Plateaux
+deserts: Déserts
+'rainforests, rivers, mountains': Forêts tropicales, Rivières, Montagnes
+'jungles, forests, deserts': Jungles, Forêts, Déserts
+'oceans, glaciers': Océans, glaciers
+'urban, vines': urbain, vignes
+'plains, forests, hills, mountains': Plaines, Forêts, Collines, Montagnes
+'cities, savannahs, seas, plains': Villes, Savanes, Mers, Plaines
+'rainforests, cliffs, canyons, seas': Forêts tropicales, Falaises, Canyons, Mers
