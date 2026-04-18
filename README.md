@@ -4,7 +4,8 @@ Ce projet Symfony explore l'univers Star Wars en affichant les informations prov
 
 ## Prérequis
 
-* PHP >= 8.2
+* PHP >= 8.3
+* Symfony 7.4
 * Composer
 
 ## Utilisation
@@ -24,7 +25,3 @@ Les contributions sont les bienvenues ! Si vous souhaitez améliorer ce projet, 
 ## Auteur
 
 * Marc Raes
-
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus d'informations.
